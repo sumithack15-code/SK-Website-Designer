@@ -14,9 +14,13 @@ export const Footer: React.FC<FooterProps> = ({ onScrollToTop }) => {
           {/* Col 1: Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-600 p-[1px] shadow-lg shadow-cyan-500/20">
-                <div className="w-full h-full bg-[#0a0b0e] rounded-[11px] flex items-center justify-center">
-                  <span className="font-extrabold text-xs text-cyan-400">SK</span>
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-600 p-[1px] shadow-lg shadow-cyan-500/20 overflow-hidden shrink-0">
+                <div className="w-full h-full bg-[#0a0b0e] rounded-[11px] flex items-center justify-center p-0.5 overflow-hidden">
+                  <img
+                    src={PERSONAL_INFO.businessLogoUrl}
+                    alt="SK Logo"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
               </div>
               <div>

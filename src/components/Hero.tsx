@@ -93,20 +93,26 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToProjects, onScrollToContac
 
               {/* Main Card */}
               <div className="relative rounded-3xl overflow-hidden bg-[#0e1017] border border-white/[0.1] shadow-2xl p-6 sm:p-7">
-                {/* Visual Workspace & Portrait Composition */}
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 bg-slate-900 border border-white/[0.08]">
+                {/* Official Business Logo Showcase */}
+                <div className="relative aspect-[16/10] sm:aspect-[4/3] rounded-2xl overflow-hidden mb-6 bg-black border border-white/[0.12] shadow-2xl flex items-center justify-center p-3 sm:p-5 group/logo">
                   <img
-                    src={PERSONAL_INFO.portraitUrl}
-                    alt="Sumit Kar - Web Developer & Designer"
-                    className="w-full h-full object-cover object-top"
+                    src={PERSONAL_INFO.businessLogoUrl}
+                    alt="SK Website Designer - Design · Develop · Grow"
+                    className="w-full h-full object-contain filter drop-shadow-[0_10px_25px_rgba(0,240,255,0.25)] transition-transform duration-500 group-hover/logo:scale-[1.03]"
                     referrerPolicy="no-referrer"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0e1017] via-transparent to-transparent opacity-80" />
+                  {/* Ambient cyan rim light */}
+                  <div className="absolute inset-0 pointer-events-none rounded-2xl ring-1 ring-inset ring-cyan-500/20" />
 
                   {/* Top-Right Location Tag */}
-                  <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/[0.1] text-[11px] font-mono text-slate-300 flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-cyan-400" />
+                  <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-black/80 backdrop-blur-md border border-white/[0.15] text-[11px] font-mono text-slate-200 flex items-center gap-1.5 shadow-lg">
+                    <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 shadow-[0_0_8px_#00f0ff]" />
                     <span>New Delhi, India</span>
+                  </div>
+
+                  {/* Subtle brand watermark tag */}
+                  <div className="absolute bottom-2.5 left-3 px-2.5 py-0.5 rounded-md bg-black/70 backdrop-blur-sm border border-white/[0.08] text-[10px] font-mono text-cyan-300">
+                    Official Brand Mark
                   </div>
                 </div>
 

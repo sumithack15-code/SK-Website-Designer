@@ -53,11 +53,13 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
           }}
           className="group flex items-center gap-3 text-left whitespace-nowrap shrink-0"
         >
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-400 via-cyan-500 to-blue-600 p-[1px] shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 transition-all">
-            <div className="w-full h-full bg-[#0a0b0e] rounded-[11px] flex items-center justify-center">
-              <span className="font-extrabold text-xs tracking-wider text-cyan-400 font-mono">
-                SK
-              </span>
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 via-cyan-500 to-blue-600 p-[1px] shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 transition-all overflow-hidden shrink-0">
+            <div className="w-full h-full bg-[#0a0b0e] rounded-[11px] flex items-center justify-center overflow-hidden p-0.5">
+              <img
+                src={PERSONAL_INFO.businessLogoUrl}
+                alt="SK Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
           </div>
 

@@ -90,8 +90,12 @@ export const AboutSection: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="w-12 h-12 rounded-2xl bg-cyan-400/10 border border-cyan-400/20 flex items-center justify-center text-cyan-400 font-mono font-bold text-base shadow-lg shadow-cyan-500/10">
-                  SK
+                <div className="w-14 h-14 rounded-2xl bg-black border border-cyan-400/30 flex items-center justify-center p-1 shadow-lg shadow-cyan-500/10 overflow-hidden shrink-0">
+                  <img
+                    src={PERSONAL_INFO.businessLogoUrl}
+                    alt="SK Logo"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
               </div>
 
